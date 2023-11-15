@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Calendar Web Component</title>
+    <!-- <script type="module" src="./app.js"></script> -->
+
+</head>
+
+<body class="background">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1000px;
+            margin-inline: auto;
+        }
+    </style>
+    <h1 class="primary-text">Calendar Web Component</h1>
+    <div id="container"></div>
+    <calendar-component></calendar-component>
+
+    <script type="module" src="./components/calendar-component.js"></script>
+<script type="module" src="./components/calendar-node-component.js"></script>
+<!-- <script src="main.js"></script> -->
+</body>
+
+</html>

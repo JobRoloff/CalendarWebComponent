@@ -1,0 +1,26 @@
+{
+  "name": "test-3-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "testwatch": "jest --watchAll",
+    "build:sass": "sass src/sass/**/*.scss:public/css --style compressed",
+    "watch:sass": "sass --watch src/sass:public/css",
+    "start": "npm-run-all build:sass --parallel watch:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {}
+  }
+}

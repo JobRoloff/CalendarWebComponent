@@ -1,0 +1,106 @@
+@import url(./md/theme.css);
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0px;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 400px;
+  height: fit-content;
+  background-color: var(--background);
+  color: var(--text-on-background);
+}
+@media screen and (max-width: 400px) {
+  .wrapper {
+    background-color: var(--background);
+    padding-inline: 0px;
+    margin-inline: 0px;
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 400px) {
+  .header * {
+    width: calc(100% - 2rem);
+    background-color: var(--background);
+  }
+}
+.header .top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-block: 1rem;
+}
+.header hr {
+  border-color: var(--foreground);
+  width: 100%;
+  margin-bottom: 0px;
+  border-inline: 0px;
+}
+
+.body {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.body div {
+  margin: 0 1rem 1rem 1rem;
+}
+.body .labels {
+  display: flex;
+  height: 10px;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+.body .label:has(input:checked) {
+  background-color: var(--foreground);
+  color: var(--text-on-foreground);
+}
+.body .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  display: none;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label span {
+  background-color: var(--foreground);
+  border-radius: 99999999px;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+label input[checked=true] + span {
+  background-color: var(--background);
+  border: 2px solid var(--foreground);
+}
+
+/*# sourceMappingURL=styles.css.map */
