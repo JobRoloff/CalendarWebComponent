@@ -1,0 +1,8 @@
+# Ignore the .env file
+.env
+
+# Ignore other sensitive files or directories
+sensitive_file.txt
+sensitive_directory/
+node_modules
+/config/*

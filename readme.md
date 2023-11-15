@@ -1,10 +1,6 @@
-#Calendar
-<video muted=true controls width="60%" class="center-positioned"> <source src="public/assets/calendardemo.mp4" type="video/mp4"> 
-<video>
+[![Watch the Demo](https://i.stack.imgur.com/Vp2cE.png)](https://clipchamp.com/watch/t1B6ncNXt3Q)
 
-##npm install //to get dependencies
-
-##npm run start //to start up the sass in the src folder
-
-##Uses Material Design System
+-npm install //to get dependencies
+-npm run watch:sass //to start up the sass in the src folder
+-use vs code live server
 
